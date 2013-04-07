@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Query:</b>
+  <%= @box.query %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @box.title %>
+</p>
+
+<p>
+  <b>Background:</b>
+  <%= @box.background %>
+</p>
+
+<p>
+  <b>Bigad:</b>
+  <%= @box.bigad %>
+</p>
+
+<p>
+  <b>Smallad:</b>
+  <%= @box.smallad %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @box.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_box_path(@box) %> |
+<%= link_to 'Back', boxes_path %>

@@ -1,4 +1,7 @@
 Vinebox::Application.routes.draw do
+  resources :boxes
+
+
   resources :vines 
   
   match '/p/:vineid' => 'vines#proxy', :as => 'proxy'

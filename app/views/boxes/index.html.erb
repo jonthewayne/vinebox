@@ -1,0 +1,33 @@
+<h1>Listing boxes</h1>
+
+<table>
+  <tr>
+    <th>Query</th>
+    <th>Title</th>
+    <th>Background</th>
+    <th>Bigad</th>
+    <th>Smallad</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @boxes.each do |box| %>
+  <tr>
+    <td><%= box.query %></td>
+    <td><%= box.title %></td>
+    <td><%= box.background %></td>
+    <td><%= box.bigad %></td>
+    <td><%= box.smallad %></td>
+    <td><%= box.description %></td>
+    <td><%= link_to 'Show', box %></td>
+    <td><%= link_to 'Edit', edit_box_path(box) %></td>
+    <td><%= link_to 'Destroy', box, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Box', new_box_path %>
