@@ -2,9 +2,14 @@ class VinesController < ApplicationController
   
   
   def proxy
+    #default to video of Judd dancing
+    @vinevideo = "https://vines.s3.amazonaws.com/videos/2013/04/06/B15F7BDE-74A4-4D43-B81A-8E2AF2A5B1AC-305-000000935BA4A4CB_1.0.7.mp4?versionId=bCRp4zWMDa_VqxSl3ykWa0c5oERUxRih"
+    
     if params[:vineid]
       @vinevideo = Vine.proxy(params[:vineid])
     end
+    
+    render :json => @vinevideo
   end
   
   # GET /vines
