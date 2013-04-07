@@ -5,21 +5,34 @@
     <title><%= content_for?(:title) ? yield(:title) : "Vinebox" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Vinebox" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
+    <link rel="stylesheet" href="/assets/app.css">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
-  <body class="<%= controller_name %> <%= action_name %>">
-    <div id="container" class="container">
-      <header>
-        <%= render 'layouts/navigation' %>
-        <%= render 'layouts/messages' %>
-      </header>
-      <div id="main" role="main">
-        <%= yield %>
+  <body>
+
+      <div class="header">
+        <div id="header">
+        	<a href="index.html" id="logo"><img src="images/logo.png" /></a>
+        	<a href="VineBox.html">Create a VineBox</a>
+        </div>
       </div>
-      <footer>
-      </footer>
-    </div> <!--! end of #container -->
-  </body>
-</html>
+  
+      
+        <%= yield %>
+      
+	  
+	  <div class="row">
+	    <div class="twelve columns">
+	    	<p id="footer"><a href="mailto:hello@vinebox.com?subject=Inquiry from VineBox">hello@vinebox.com</a><br />a product of curious entity</p>
+	    </div>
+	  </div>  
+  
+  
+	</body>
+	</html>
+
