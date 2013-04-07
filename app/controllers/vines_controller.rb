@@ -1,4 +1,12 @@
 class VinesController < ApplicationController
+  
+  
+  def proxy
+    if params[:vineid]
+      @vinevideo = Vine.proxy(params[:vineid])
+    end
+  end
+  
   # GET /vines
   # GET /vines.json
   def index
