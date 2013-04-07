@@ -67,11 +67,11 @@ abbr,acronym { border:0;
  
  .frame{border:#ffffff 5px solid; -moz-box-shadow: 0 0 5px #888!important; -webkit-box-shadow: 0 0 5px#888!important; box-shadow: 0 0 5px #888!important;}
  
- #vidViewer{width:65%; float:left; margin:15px 0px;}
+ #vidViewer{ width: 100%; float:left; margin:15px 0px;}
  
  #vid{border:#000 solid 15px;}
  
- #sideAdSpace{width:33%;float:right; margin:15px 0px;}
+ #sideAdSpace{float:right; margin:15px 0px;}
  
  #botomAdSpace{display:none;}
  

@@ -38,6 +38,13 @@
 
 // From here we need the document to load up
 $(function() {
+	
+	var QueryVines = '#fast6';
+	var showTweets = 1;
+	
+	
+	
+	
 	_V_("vb_cont", {
 		loop : false,
 		autoplay: true,
@@ -45,7 +52,7 @@ $(function() {
 		techOrder: ['html5', 'flash']
 	}, function(){ this.volume(0);
 		myPlayer = this;
-		var search = new Vine.Search({  q:'#fast6', result_type: "recent", rpp: 100 }, function(){
+		var search = new Vine.Search({  q:QueryVines, result_type: "recent", rpp: 100 }, function(){
 			search.fetch(function () {
 				vinearray = this.results; 
 				var i = 0; 
@@ -58,26 +65,28 @@ $(function() {
 
 					var vineID = vine_url.replace("https://vine.co/v/", "");
 
-//					console.log('Vine Succesfully Played');
 					vineMP4 = 'https://vines.s3.amazonaws.com/v/videos/2013/04/02/5FBEF637-F7BD-4E4F-BFD9-39B7E6D8A475-651-000000BCB27D4038_1.0.7.mp4?versionId=srm2xEEtSI97VOQbEFuxmVUYAE6sNnra';
 
-/*
-baseUrl = vine_url;
-$.ajax({
-    url: baseUrl,
-    type: "get",
-    dataType: "",
-    success: function(data) {
-        //do something with data
-        var data_html = data;
-        
-        alert( data.html.find('twitter:player:stream').html() );
 
-    }
-});
-*/
 
-					console.log(vine_url);
+
+				
+					$.ajax({
+					  dataType: "json",
+					  type:'get',
+					  url: 'http://vinebox.net/p/'+vineID,
+					  success: function(){
+						  alert('yes!');
+						  vineMP4 = data;
+					  }, 
+					  error: function() {
+					      	vineMP4 = 'https://vines.s3.amazonaws.com/videos/2013/04/06/B15F7BDE-74A4-4D43-B81A-8E2AF2A5B1AC-305-000000935BA4A4CB_1.0.7.mp4?versionId=bCRp4zWMDa_VqxSl3ykWa0c5oERUxRih';
+					  }
+					});
+				
+
+
+/* 					console.log(vine_url); */
 					myPlayer.src({ 
 						type: "video/mp4", 
 						src: vineMP4
@@ -88,7 +97,15 @@ $.ajax({
 				    return text.replace(exp,"<a href='$1' target='_BLANK'>$1</a>"); 
 					}
 					
-					$('#tweet_deets').html(user + ' - ' + proccessTweet(tweet) );
+					if(showTweets) {
+						//show the tweets
+						$('#tweet_deets').html(user + ' - ' + proccessTweet(tweet) );
+							
+					} else {
+						$('#tweet_deets').remove();
+					}
+										
+
 				} // end loadVideo()
 				
 				myPlayer.addEvent("ended", function(){
