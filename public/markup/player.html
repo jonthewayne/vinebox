@@ -69,20 +69,11 @@ $(function() {
 
 					
 					
-					$.get('http://vinebox.net/p/'+vineID+'.json', function(data) {
-					  vineMP4 = data;
-/*   alert('Load was performed.'); */
-			});
-
-
-
-					
-/*
 					$.ajax({
 						dataType: "json",
 						type:'GET',
 						url: 'http://vinebox.net/p/'+vineID+'.json',
-						success: function(data){
+						success: function(url){
 							vineMP4 = data;
 						}, 
 						error: function() {
@@ -91,7 +82,6 @@ $(function() {
 						async: false
 					});
 					
-*/
 
 					myPlayer.src({ 
 						type: "video/mp4", 
