@@ -67,13 +67,11 @@ $(function() {
 
 					vineMP4 = 'https://vines.s3.amazonaws.com/v/videos/2013/04/02/5FBEF637-F7BD-4E4F-BFD9-39B7E6D8A475-651-000000BCB27D4038_1.0.7.mp4?versionId=srm2xEEtSI97VOQbEFuxmVUYAE6sNnra';
 
-					
-					
+
 					$.ajax({
-						dataType: "json",
 						type:'GET',
-						url: 'http://vinebox.net/p/'+vineID+'.json',
-						success: function(url){
+						url: 'http://vinebox.net/p/'+vineID,
+						success: function(data){
 							vineMP4 = data;
 						}, 
 						error: function() {
@@ -81,6 +79,7 @@ $(function() {
 						},
 						async: false
 					});
+					
 					
 
 					myPlayer.src({ 
