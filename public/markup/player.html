@@ -67,7 +67,6 @@ $(function() {
 
 					vineMP4 = 'https://vines.s3.amazonaws.com/v/videos/2013/04/02/5FBEF637-F7BD-4E4F-BFD9-39B7E6D8A475-651-000000BCB27D4038_1.0.7.mp4?versionId=srm2xEEtSI97VOQbEFuxmVUYAE6sNnra';
 
-
 					$.ajax({
 						dataType: "json",
 						type:'get',
@@ -79,8 +78,16 @@ $(function() {
 						error: function() {
 /* 							alert('oh snap!'); */
 							vineMP4 = 'https://vines.s3.amazonaws.com/videos/2013/04/06/B15F7BDE-74A4-4D43-B81A-8E2AF2A5B1AC-305-000000935BA4A4CB_1.0.7.mp4?versionId=bCRp4zWMDa_VqxSl3ykWa0c5oERUxRih';
-						}
+						},
+						async: false
 					});
+					
+					
+					 return $.getJSON("allItems.json").pipe(function (data) {
+
+				        return data.items;
+
+				    });
 
 
 					myPlayer.src({ 
