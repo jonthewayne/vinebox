@@ -9,7 +9,7 @@ end
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0"
 gem "compass-rails", ">= 1.0.3", :group => :assets
-gem "zurb-foundation", "= 3.2.5", :group => :assets
+gem "zurb-foundation", "3.2.5", :group => :assets
 gem "devise", ">= 2.2.3"
 gem "cancan", ">= 1.6.9"
 gem "rolify", ">= 3.2.0"
