@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>vine.js demo</title>
+		<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA1BMVEV/y+Bw0/5KAAAADElEQVQImWNgIA0AAAAwAAFDlLdnAAAAAElFTkSuQmCC" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<link rel="stylesheet" media="screen" href="demo.css"/>
+	</head>
+	<body>
+		<div id="main">
+			<div id="note">
+			This is a demonstration of <a href="https://github.com/jsvine/vinejs">vine.js</a> by <a href="http://twitter.com/jsvine">@jsvine</a>.
+			</div>
+			<div id="examples">
+				<div class="example">
+					<div class="explanation">Recent vines tagged "#cats" on Twitter.</div>
+					<div class="code">var search = new Vine.Search("#cats");</div>
+					<div class="go"><button>search.fetch()</button></div>
+					<div class="results"></div>
+				</div>
+				<div class="example">
+					<div class="explanation">Recent vines tagged "#cats" or "#dogs" on Twitter.</div>
+					<div class="code">var search = new Vine.Search("#cats OR #dogs");</div>
+					<div class="go"><button>search.fetch()</button></div>
+					<div class="results"></div>
+				</div>
+				<div class="example">
+					<div class="explanation">Recent cats and dogs within 10 miles of downtown Denver.</div>
+					<div class="code">var search = new Vine.Search({
+	q: "cat OR dog",
+	geocode: "39.730426,-104.927673,10mi"
+});</div>
+					<div class="go"><button>search.fetch()</button></div>
+					<div class="results"></div>
+				</div>
+				<div class="example">
+					<div class="explanation">Vines mentioning "biden" before February 14, 2013.</div>
+					<div class="code">var search = new Vine.Search({
+	q: "biden",
+	until: "2013-02-14"
+});</div>
+					<div class="go"><button>search.fetch()</button></div>
+					<div class="results"></div>
+				</div>
+			</div>
+		</div>
+		<script src="../vine.js"></script>
+		<script src="demo.js"></script>
+	</body>
+</html>
