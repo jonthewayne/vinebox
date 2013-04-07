@@ -1,0 +1,190 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+ 
+ /******************end reset************/
+ 
+ body{background-image:url(../images/background.jpg);}
+ 
+ p, a, .remember{font-family: 'Open Sans', sans-serif; font-weight:300; color:#444444; font-size:1em;}
+ 
+ #logo{color:#8dc63f!important;font-size:2em!important; font-weight:400!important; width:200px!important; float:left!important; padding-top:0px!important; text-align:left!important;}
+ 
+ h2{color:#444444;font-size:1.5em; font-weight:300; padding: 15px 0px;}
+ 
+ h4{color:#444444;font-size:1.3em; font-weight:300; padding: 15px 0px 5px 0px; text-align:center;}
+ 
+ .center{text-align:center; padding-top:10px;}
+ 
+ .blurb{text-align:center; line-height:1.6em; padding-bottom:30px;}
+ 
+ .boderBottom{margin-bottom:30px; border-bottom:1px #CCC solid;}
+ 
+ .borderTop{margin-top:30px; border-top:1px #CCC solid;}
+ 
+ .whiteHeader{color:#fff!important;text-align:center;font-size:2em;}
+ 
+ .header{background:#FFF; padding:10px;height:55px;}
+ 
+ #header{max-width:940px; margin-left:auto; margin-right:auto; z-index:50;}
+ 
+ #header a{float:right; color:#444444; width: 115px; text-align:right; padding-top:10px;}
+ 
+ a:hover{color:#8dc63f;}
+ 
+ #headerShadow{z-index:50!important;}
+ 
+ #mainViewer{background:url(../images/advertising/fastfurious6/fastFuriousBKGD.jpg) no-repeat; position:relative; top:-19px; z-index:10;width: 100%; max-width: 1200px; margin: auto;}
+ 
+ #adWrapper{max-width:940px;margin:auto;}
+ 
+ .frame{border:#ffffff 5px solid; -moz-box-shadow: 0 0 5px #888!important; -webkit-box-shadow: 0 0 5px#888!important; box-shadow: 0 0 5px #888!important;}
+ 
+ #vidViewer{width:65%; float:left; margin:15px 0px;}
+ 
+ #vid{border:#000 solid 15px;}
+ 
+ #sideAdSpace{width:33%;float:right; margin:15px 0px;}
+ 
+ #botomAdSpace{display:none;}
+ 
+ .leftVid{float:left; width:46%; margin-right:30px;}
+ 
+ .rightVid{float:right; width:46%;}
+ 
+ #footer{text-align:center; margin:30px auto; padding-top:15px; border-top:1px #CCC solid;}
+ 
+ #controls{width:100%; background-color:#000; height:30px; padding:0px 15px 5px 0px; position:relative;top:-2px;}
+ 
+ #volume, #fullScreen{width:27px; float:right; padding-left:5px;}
+ 
+ #tweetWrap{position:relative;}
+ 
+ #tweet{position:absolute; width:100%; top:-85px; height:80px; padding:10px 25px;background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";}
+ 
+ #tweet p, #tweetIcon{float:left;}
+ 
+ #tweet p{color:#fff; padding-left:5px;line-height:1.2em;}
+ 
+ #greenHeader{background-color:#8dc63f; position:relative; top:-19px; z-index:10; background-image:url(../images/controls/triangle.png); background-repeat:no-repeat; background-position:right top;width: 100%; max-width: 1200px; margin: auto;}
+ 
+ #signup{width:300px; text-align:center; margin:0px auto;}
+ 
+ #signup input{width:300px; margin-bottom:15px; color:#ccc; font-family: 'Open Sans', sans-serif; font-weight:300;}
+ 
+ #checkbox{width:10px!important; margin:0px 5px 0px 0px!important;}
+ 
+ #hashtagForm{width:300px; text-align:center; margin:15px auto;}
+ 
+ #hashtagForm input{width:300px; margin-bottom:15px; color:#ccc; font-family: 'Open Sans', sans-serif; font-weight:300;}
+ 
+ #submit{width:200px!important;}
+ 
+ #createNew{width:200px!important; text-align:center; margin:0px auto; border:0; margin-top:15px; margin-bottom:30px;}
+ 
+ .projects{text-align:center;}
+ 
+ .steps{font-family: 'Open Sans', sans-serif; font-weight:300; color:#444444; font-size:1.3em;}
+ 
+ .steps li img{position:relative; top:8px; padding-right:5px;}
+ 
+ .options{background-color:#ffffff;padding:5px;text-align:center; margin-bottom:10px;
+  -moz-box-shadow:    0px 0px 5px 0px #888;
+  -webkit-box-shadow: 0px 0px 5px 0px #888;
+  box-shadow:         0px 0px 5px 0px #888;
+}
+  .cat{background-color:#8dc63f; border:#ffffff 5px solid; min-height:125px; padding:5px;text-align:center; margin-bottom:10px;background-image:url(../images/controls/triangleSM.png); background-repeat:no-repeat; position:top right;
+  -moz-box-shadow:    0px 0px 5px 0px #888;
+  -webkit-box-shadow: 0px 0px 5px 0px #888;
+  box-shadow:         0px 0px 5px 0px #888;}
+  
+  .cat p{color:#ffffff!important; font-size:20px; padding-top:35px;}
+;
+  .topMarg{margin-top:15px;}
+  
+  #editScreen{margin:0px auto; max-width:275px;}
+  
+  .create{margin-top:45px!important;}
+ 
+ textarea{padding:5px;width:300px; margin-bottom:15px; color:#ccc; font-family: 'Open Sans', sans-serif; font-weight:300;}
+ 
+ .pad10{padding-bottom:10px;}
+ 
+ @media only screen and (max-width: 767px){
+  .full{width:60%; margin: 15px 20%;} 
+  
+  .large{width:100%; margin: 15px 0px 0px 0px;} 
+  
+  .bottomVid{margin-top:30px;}
+  
+  .leftVid{width:47%; margin-right:0px;}
+ 
+  .rightVid{width:47%;}
+  
+   h2{text-align:center;}
+   
+   #vidViewer{width:67%; margin:15px 15%; float:none;}
+   
+   #botomAdSpace{display:block; width:67%; margin:15px 15% 0px 15%;}
+   
+   #sideAdSpace{display:none;}
+   
+   .projects{width:50%; margin: 15px 25%}
+   
+   #editScreen{max-width:250px;}
+   
+ }
+ 
+ @media only screen and (max-width: 810px) and (min-width: 767px){
+  .leftVid{width:45%;}
+ 
+  .rightVid{width:45%;}
+ 
+ }
+ 
+  @media only screen and (max-width: 530px){
+  .leftVid{width:47%;}
+ 
+  .rightVid{width:47%;} 
+  
+  #vidViewer{width:90%; margin:15px 5%;}
+   
+   #botomAdSpace{width:90%; margin:15px 5% 0px 5%;}
+   
+   #tweet p{width:74%;}
+   
+   #hashtagForm input{width:290px;}
+ }
