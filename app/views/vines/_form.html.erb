@@ -1,0 +1,25 @@
+<%= form_for(@vine) do |f| %>
+  <% if @vine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vine.errors.count, "error") %> prohibited this vine from being saved:</h2>
+
+      <ul>
+      <% @vine.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uri %><br />
+    <%= f.text_field :uri %>
+  </div>
+  <div class="field">
+    <%= f.label :vineid %><br />
+    <%= f.text_field :vineid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

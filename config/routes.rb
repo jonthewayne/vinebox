@@ -1,4 +1,7 @@
 Vinebox::Application.routes.draw do
+  resources :vines
+
+
   authenticated :user do
     root :to => 'home#index'
   end

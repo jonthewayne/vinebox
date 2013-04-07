@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Uri:</b>
+  <%= @vine.uri %>
+</p>
+
+<p>
+  <b>Vineid:</b>
+  <%= @vine.vineid %>
+</p>
+
+
+<%= link_to 'Edit', edit_vine_path(@vine) %> |
+<%= link_to 'Back', vines_path %>
