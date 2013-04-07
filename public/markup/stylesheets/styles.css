@@ -61,7 +61,7 @@ abbr,acronym { border:0;
  
  #headerShadow{z-index:50!important;}
  
- #mainViewer{background:url(../images/advertising/fastfurious6/fastFuriousBKGD.jpg) no-repeat; position:relative; top:-19px; z-index:10;width: 100%; max-width: 1200px; margin: auto;}
+ #mainViewer{background:url(../images/advertising/fastfurious6/fastFuriousBKGD.jpg) no-repeat; position:relative; top:-19px; z-index:10;width: 100%; max-width: 1600px; margin: auto;}
  
  #adWrapper{max-width:940px;margin:auto;}
  
