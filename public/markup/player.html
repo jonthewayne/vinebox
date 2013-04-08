@@ -76,9 +76,11 @@ $(function() {
 							vineMP4 = data;
 							
 							myPlayer.src({ 
-							type: "video/mp4", 
-							src: vineMP4
-							}),myPlayer.play();
+							  type: "video/mp4", 
+							  src: vineMP4
+							});
+							
+							myPlayer.play();
 					
 						}, 
 						error: function() {
@@ -87,7 +89,9 @@ $(function() {
 							myPlayer.src({ 
 							type: "video/mp4", 
 							src: vineMP4
-							}),myPlayer.play();
+							});
+							
+							myPlayer.play();
 							
 						}
 					});
