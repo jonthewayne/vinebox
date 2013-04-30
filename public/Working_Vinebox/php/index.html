@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Vine Box Sandbox</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="vbx/vine.js"></script>
+	<script src="vbx/projectVineBox.js"></script>
+	<script src="http://vjs.zencdn.net/c/video.js"></script>
+	
+	
+	
+	
+</head>
+<body>
+<div id="sound">hello</div>
+<!-- Example Proxy URL: http://vinebox.net/proxy.php?ID=bIU7mrTXjv5 -->
+
+
+
+<video id="Player" class="video-js vjs-default-skin" width="400" height="400" style="width:400px !important; height:400px !important;">
+</video>
+
+
+<div id="tweet" style="clear:both;"></div>
+
+
+<script type="text/javascript">
+$(function() {
+	$('#video').vineBox({
+		'search_term' : '#dance'
+	});
+	
+	var myPlayer = _V_("Player", { "controls": false, "autoplay": false, });
+	
+	
+});
+
+</script>
+
+
+
+
+</body>
+</html>
