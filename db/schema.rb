@@ -62,10 +62,24 @@ ActiveRecord::Schema.define(:version => 20130407220131) do
   add_index "users_roles", ["user_id", "role_id"], :name => "index_users_roles_on_user_id_and_role_id"
 
   create_table "vines", :force => true do |t|
-    t.string   "uri"
-    t.string   "vineid"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "video_uri"
+    t.string   "vine_id"
+    t.datetime "tweet_created_at"
+    t.float    "tweet_lat"
+    t.float    "tweet_long"
+    t.string   "tweet_from_user"
+    t.string   "tweet_from_user_id"
+    t.string   "tweet_from_user_name"
+    t.string   "tweet_id"
+    t.string   "tweet_id_str"
+    t.string   "tweet_iso_language_code"
+    t.string   "tweet_profile_image_url"
+    t.string   "tweet_profile_image_url_https"
+    t.string   "tweet_text"
+    t.text     "tweet_json"
+    t.boolean  "tweet_processed",               :default => false
+    t.datetime "created_at",                                       :null => false
+    t.datetime "updated_at",                                       :null => false
   end
 
 end
