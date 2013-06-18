@@ -1,0 +1,80 @@
+{
+    "completed_in": 0.014,
+    "max_id": 333835964306825200,
+    "max_id_str": "333835964306825216",
+    "next_page": "?page=2&max_id=333835964306825216&q=vine.co%2F&rpp=2&include_entities=1&result_type=recent",
+    "page": 1,
+    "query": "vine.co%2F",
+    "refresh_url": "?since_id=333835964306825216&q=vine.co%2F&result_type=recent&include_entities=1",
+    "results": [
+        {
+            "created_at": "Mon, 13 May 2013 06:47:50 +0000",
+            "entities": {
+                "hashtags": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/JIv7pjtwTJ",
+                        "expanded_url": "https://vine.co/v/b0teXg0mawd",
+                        "display_url": "vine.co/v/b0teXg0mawd",
+                        "indices": [
+                            10,
+                            33
+                        ]
+                    }
+                ],
+                "user_mentions": []
+            },
+            "from_user": "TrulyyMonica",
+            "from_user_id": 894007460,
+            "from_user_id_str": "894007460",
+            "from_user_name": "Monica ",
+            "geo": null,
+            "id": 333835964306825200,
+            "id_str": "333835964306825216",
+            "iso_language_code": "en",
+            "metadata": {
+                "result_type": "recent"
+            },
+            "profile_image_url": "http://a0.twimg.com/profile_images/3551509021/973aa6b65848ea47741663c0a95fe18c_normal.jpeg",
+            "profile_image_url_https": "https://si0.twimg.com/profile_images/3551509021/973aa6b65848ea47741663c0a95fe18c_normal.jpeg",
+            "source": "&lt;a href=&quot;http://vine.co&quot;&gt;Vine - Make a Scene&lt;/a&gt;",
+            "text": "Fat bitch https://t.co/JIv7pjtwTJ"
+        },
+        {
+            "created_at": "Mon, 13 May 2013 06:47:50 +0000",
+            "entities": {
+                "hashtags": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/J3bb7ISFqi",
+                        "expanded_url": "https://vine.co/v/b0teX6YPr0E",
+                        "display_url": "vine.co/v/b0teX6YPr0E",
+                        "indices": [
+                            25,
+                            48
+                        ]
+                    }
+                ],
+                "user_mentions": []
+            },
+            "from_user": "jaredmbruce",
+            "from_user_id": 364081546,
+            "from_user_id_str": "364081546",
+            "from_user_name": "Busterhighmen",
+            "geo": null,
+            "id": 333835963807698940,
+            "id_str": "333835963807698944",
+            "iso_language_code": "en",
+            "metadata": {
+                "result_type": "recent"
+            },
+            "profile_image_url": "http://a0.twimg.com/profile_images/3307311694/35779fc02ac6954e4b12b9ee43e28533_normal.jpeg",
+            "profile_image_url_https": "https://si0.twimg.com/profile_images/3307311694/35779fc02ac6954e4b12b9ee43e28533_normal.jpeg",
+            "source": "&lt;a href=&quot;http://vine.co&quot;&gt;Vine - Make a Scene&lt;/a&gt;",
+            "text": "Getting my drunk brother https://t.co/J3bb7ISFqi"
+        }
+    ],
+    "results_per_page": 2,
+    "since_id": 0,
+    "since_id_str": "0"
+}

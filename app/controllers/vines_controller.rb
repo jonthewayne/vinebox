@@ -9,7 +9,8 @@ class VinesController < ApplicationController
       @vinevideo = Vine.proxy(params[:vineid])
     end
     
-    render :json => @vinevideo
+    #logger.debug params[:vinedata]
+    render :json => params[:vinedata]
   end
   
   # GET /vines

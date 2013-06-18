@@ -2,3 +2,9 @@
 <% @users.each do |user| %>
   <p>User: <%=link_to user.name, user %></p>
 <% end %>
+
+<br><br>
+
+<%= content_tag :div, id: "player", data: {url: root_url+'p/'} do %>
+	<a href="#" id="test_link">Click to Test</a>
+<% end %>
